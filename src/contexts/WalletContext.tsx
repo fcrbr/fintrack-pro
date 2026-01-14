@@ -1,7 +1,10 @@
-import { createContext, useState, ReactNode } from 'react';
-import { WalletState, Transaction, WalletContextData } from '../types/finance';
+// src/contexts/WalletContext.tsx
 
-export const WalletContext = createContext<WalletContextType | undefined>(undefined);
+import { createContext, useState } from 'react'; // Código (Runtime)
+import type { ReactNode } from 'react'; // Tipo (Design time)
+import type { WalletState, Transaction, WalletContextData } from '../types/finance';
+
+export const WalletContext = createContext<WalletContextData | undefined>(undefined);
 
 export function WalletProvider({ children }: { children: ReactNode }) {
   const [wallet, setWallet] = useState<WalletState>({
