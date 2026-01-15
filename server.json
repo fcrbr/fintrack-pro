@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "amount": 1500,
+      "type": "DEPOSIT",
+      "category": "Salary",
+      "date": "2024-05-20T10:00:00Z",
+      "description": "Real API Initial Deposit"
+    },
+    {
+      "id": "258f31a7-ffd2-4c86-b53d-6cb2144ad4dc",
+      "description": "Salary",
+      "amount": 4500,
+      "type": "DEPOSIT",
+      "category": "General",
+      "date": "2026-01-15T01:23:48.271Z"
+    },
+    {
+      "id": "ce777147-b6b0-4d62-929f-597970ec38d4",
+      "description": "Compra de Ações",
+      "amount": 500,
+      "type": "WITHDRAWAL",
+      "category": "General",
+      "date": "2026-01-15T15:38:57.867Z"
+    }
+  ]
+}
