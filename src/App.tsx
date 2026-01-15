@@ -1,6 +1,7 @@
 import { WalletProvider } from './contexts/WalletContext';
 import { BalanceCard } from './components/BalanceCard';
 import { TransactionForm } from './components/TransactionForm';
+import { TransactionList } from './components/TransactionList';
 
 function App() {
   return (
@@ -28,10 +29,8 @@ function App() {
             <h2 className="text-xl font-semibold text-slate-200">Account Summary</h2>
             <BalanceCard />
             
-            {/* DICA: No futuro, colocaremos a lista de transações aqui embaixo */}
-            <div className="bg-slate-900/50 p-6 rounded-2xl border border-dashed border-slate-800 flex items-center justify-center text-slate-500">
-              Transaction history will appear here.
-            </div>
+            <h2 className="text-xl font-semibold text-slate-200">History</h2>
+            <TransactionList /> {/* Substituímos o div antigo por este componente */}
           </section>
 
         </main>
